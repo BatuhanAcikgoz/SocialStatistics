@@ -1,0 +1,16 @@
+{
+  "name": "social-statistics",
+  "version": "1.0.0",
+  "description": "Instagram ve TikTok içeriklerini analiz eden, sıralayan ve dışa aktaran tarayıcı eklentisi",
+  "scripts": {
+    "build": "node build.js",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.1.1",
+    "rimraf": "^5.0.1"
+  },
+  "author": "",
+  "license": "MIT"
+}
+

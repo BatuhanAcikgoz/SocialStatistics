@@ -1,0 +1,188 @@
+/* Genel Stiller */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 14px;
+    min-width: 400px;
+    max-width: 600px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Başlık */
+header {
+    background-color: #4285f4;
+    color: white;
+    padding: 15px 20px;
+    border-bottom: 1px solid #3367d6;
+}
+
+header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.platform-detection {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+/* İçerik Alanı */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    overflow: auto;
+}
+
+/* Kontrol Paneli */
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.sort-controls, .export-controls {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    padding: 12px;
+    border: 1px solid #e1e4e8;
+}
+
+h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #5f6368;
+}
+
+.sort-options, .export-options {
+    display: flex;
+    gap: 10px;
+}
+
+select {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 13px;
+}
+
+.primary-button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.primary-button:hover {
+    background-color: #1765cc;
+}
+
+.primary-button:active {
+    background-color: #155bb5;
+}
+
+/* Sonuçlar Paneli */
+.results-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.status-message {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    display: none;
+}
+
+.status-message.info {
+    background-color: #e8f0fe;
+    color: #1967d2;
+    display: block;
+}
+
+.status-message.success {
+    background-color: #e6f4ea;
+    color: #137333;
+    display: block;
+}
+
+.status-message.error {
+    background-color: #fce8e6;
+    color: #c5221f;
+    display: block;
+}
+
+.data-preview {
+    flex: 1;
+    overflow: auto;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background-color: #f8f9fa;
+    z-index: 1;
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e1e4e8;
+    font-size: 12px;
+}
+
+th {
+    font-weight: 600;
+    color: #5f6368;
+}
+
+tbody tr:hover {
+    background-color: #f1f3f4;
+}
+
+/* Footer */
+footer {
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e1e4e8;
+}
+
+.status-bar {
+    font-size: 12px;
+    color: #5f6368;
+}

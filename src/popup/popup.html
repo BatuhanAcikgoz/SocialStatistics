@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Statistics</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Social Statistics</h1>
+            <div class="platform-detection" id="platformInfo">
+                Tespit edilen platform: <span id="currentPlatform">-</span>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="controls">
+                <div class="sort-controls">
+                    <h2>Sıralama Seçenekleri</h2>
+                    <div class="sort-options">
+                        <select id="sortCriteria">
+                            <option value="date">Tarih (Yeniden Eskiye)</option>
+                            <option value="date-asc">Tarih (Eskiden Yeniye)</option>
+                            <option value="likes">Beğeni Sayısı</option>
+                            <option value="views">Görüntülenme Sayısı</option>
+                            <option value="comments">Yorum Sayısı</option>
+                            <option value="shares">Paylaşım Sayısı</option>
+                        </select>
+                        <button id="sortButton" class="primary-button">Sırala</button>
+                    </div>
+                </div>
+
+                <div class="export-controls">
+                    <h2>Dışa Aktarma</h2>
+                    <div class="export-options">
+                        <select id="exportFormat">
+                            <option value="excel">Excel (.xlsx)</option>
+                            <option value="csv">CSV</option>
+                            <option value="json">JSON</option>
+                        </select>
+                        <button id="exportButton" class="primary-button">Dışa Aktar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-panel">
+                <div class="status-message" id="statusMessage"></div>
+                <div class="data-preview" id="dataPreview">
+                    <table id="previewTable">
+                        <thead>
+                            <tr>
+                                <th>Tarih</th>
+                                <th>Başlık/Açıklama</th>
+                                <th>Beğeni</th>
+                                <th>Görüntülenme</th>
+                                <th>Yorum</th>
+                                <th>Paylaşım</th>
+                            </tr>
+                        </thead>
+                        <tbody id="previewTableBody">
+                            <!-- JavaScript tarafından doldurulacak -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="status-bar" id="statusBar">Hazır</div>
+        </footer>
+    </div>
+
+    <script src="popup.js" type="module"></script>
+</body>
+</html>
